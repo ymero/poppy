@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InterADC>
+    <FileSeq>文件流水号</FileSeq>
+    <OrdData>
+        <ECID>集团客户ID:56599999999996</ECID>
+        <OrdTime>集团客户订购时间</OrdTime>
+        <ECInfo>
+            <ProdID>业务编码500001796998</ProdID>
+            <ChildECInfo>
+                <ChildECID>用户手机号</ChildECID>
+                <OprCode>操作代码</OprCode>
+                <FeeTime>计费时间</FeeTime>
+                <Price>资费</Price>
+            </ChildECInfo>
+            <ChildECInfo>
+                <ChildECID>用户手机号2</ChildECID>
+                <OprCode>操作代码2</OprCode>
+                <FeeTime>计费时间2</FeeTime>
+                <Price>资费2</Price>
+            </ChildECInfo>
+        </ECInfo>
+        <ECInfo>
+            <ProdID>业务编码500001796999</ProdID>
+            <ChildECInfo>
+                <ChildECID>用户手机号991</ChildECID>
+                <OprCode>操作代码991</OprCode>
+                <FeeTime>计费时间991</FeeTime>
+                <Price>资费991</Price>
+            </ChildECInfo>
+            <ChildECInfo>
+                <ChildECID>用户手机号992</ChildECID>
+                <OprCode>操作代码992</OprCode>
+                <FeeTime>计费时间992</FeeTime>
+                <Price>资费992</Price>
+            </ChildECInfo>
+        </ECInfo>
+    </OrdData>
+</InterADC>
