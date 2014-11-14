@@ -9,7 +9,7 @@
  * Version    Date       By            Comment
  * 1.0        2014-3-10    wangz       新建
  *****************************************************************************/
-package com.shdy.httpclient.study;
+package httpclient;
 
 import java.io.File;
 import java.io.FileInputStream;
