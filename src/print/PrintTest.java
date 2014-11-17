@@ -182,11 +182,10 @@ public class PrintTest implements Printable {
         job.setPageable(book);
         try {
             // 可以用printDialog显示打印对话框，在用户确认后打印；也可以直接打印
-            // boolean a=job.printDialog();
-            // if(a)
-            // {
-            job.print();
-            // }
+            boolean a = job.printDialog();
+            if (a) {
+                job.print();
+            }
         } catch (PrinterException e) {
             e.printStackTrace();
         }
