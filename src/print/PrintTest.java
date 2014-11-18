@@ -65,19 +65,20 @@ public class PrintTest implements Printable {
         double y = pageFormat.getImageableY();
         switch (pageIndex) {
             case 0:
-                // 设置打印字体（字体名称、样式和点大小）（字体名称可以是物理或者逻辑名称）
-                // Java平台所定义的五种字体系列：Serif、SansSerif、Monospaced、Dialog 和
-                // 第三个参数10指的是字的大小
+                // 设置打印字体（字体名称、样式和点大小）（字体名称可以是物理或者逻辑名称），第三个参数10指的是字的大小
+                // Java平台所定义的五种字体系列：Serif、SansSerif、Monospaced、Dialog
                 Font font = new Font("新宋体", Font.PLAIN, 10);
-                g2.setFont(font);// 设置字体
+                // 设置字体，把字体设置加到画笔里
+                g2.setFont(font);
+                // 线宽
                 BasicStroke bs_3 = new BasicStroke(0.5f);
+                // 虚线的宽度
                 float[] dash1 = { 2.0f };
-                // 设置打印线的属性。
-                // 1.线宽 2、3、不知道，4、空白的宽度，5、虚线的宽度，6、偏移量
+                // 设置打印线的属性。1、线宽 2、3、不知道，4、空白的宽度，5、虚线的宽度，6、偏移量
                 g2.setStroke(new BasicStroke(0.5f, BasicStroke.CAP_BUTT, BasicStroke.JOIN_MITER, 2.0f, dash1, 0.0f));
                 // 设置线宽
                 g2.setStroke(bs_3);
-                // 字体高度
+                // 字体高度，这个不加上的话，最上面的一行字就太往上了，有一半都看不见了
                 float heigth = font.getSize2D();
                 System.out.println("x=" + x);
                 // -1- 用Graphics2D直接输出
@@ -85,8 +86,11 @@ public class PrintTest implements Printable {
                 // g2.drawLine(10, 10, 200, 300);
                 // 打印图片，括号里写上本地图片的路径
                 Image src = Toolkit.getDefaultToolkit().getImage("");
+                // 开始画图片的位置
                 g2.drawImage(src, ( int ) x, ( int ) y, c);
+                // 设置图片的高
                 int img_Height = src.getHeight(c);
+                // 设置图片的宽
                 int img_width = src.getWidth(c);
                 System.out.println("img_Height=" + img_Height + "img_width=" + img_width);
                 g2.drawString(str1, ( float ) x, ( float ) y + 1 * heigth + img_Height);
@@ -146,8 +150,10 @@ public class PrintTest implements Printable {
                     * heigth + img_Height + 160));
                 // 画表格内容结束
                 g2.drawImage(src, ( int ) x, ( int ) (y + 1 * heigth + img_Height + 11), c);
+                // return 0;
                 return PAGE_EXISTS;
             default:
+                // return 1;
                 return NO_SUCH_PAGE;
         }
     }
@@ -155,8 +161,15 @@ public class PrintTest implements Printable {
 
 
     public static void main(String[] args) {
+        /*
+         * 步骤1：创建book，Book book = new Book()。
+         * 步骤2：设置好PageFormat和Paper，并将它们添加到book中。
+         * 步骤3：获取打印机服务对象PrinterJob，job.setPageable(book)设置打印类。
+         * 步骤4：job.print()打印啦。
+         */
         // 通俗理解就是书、文档
         Book book = new Book();
+        // PageFomat，这个设置完了要放到book中的
         PageFormat pf = new PageFormat();
         // 设置成横打
         pf.setOrientation(PageFormat.REVERSE_LANDSCAPE);
