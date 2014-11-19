@@ -30,7 +30,7 @@ import java.awt.print.PrinterJob;
  * @date 2014-11-17
  * @since 1.0
  */
-public class Print implements Printable {
+public class AnhuiPrint implements Printable {
 
     /**
      * 发货单号
@@ -173,15 +173,15 @@ public class Print implements Printable {
         p.setImageableArea(-72, 72, 590, 840);
         pf.setPaper(p);
         // 传参
-        Print print = new Print();
-        print.title = "XXXXtitle";
-        print.salesCode = "XXXX";
-        print.number = "XXXX";
-        print.sendBy = "XXXXsendBy";
-        print.receiver = "XXXXreceiver";
-        print.remarks = "XXXX";
-        print.totalPage = 1;
-        book.append(print, pf, 1);
+        AnhuiPrint anhuiPrint = new AnhuiPrint();
+        anhuiPrint.title = "XXXXtitle";
+        anhuiPrint.salesCode = "XXXX";
+        anhuiPrint.number = "XXXX";
+        anhuiPrint.sendBy = "XXXXsendBy";
+        anhuiPrint.receiver = "XXXXreceiver";
+        anhuiPrint.remarks = "XXXX";
+        anhuiPrint.totalPage = 1;
+        book.append(anhuiPrint, pf, 1);
         PrinterJob job = PrinterJob.getPrinterJob();
         job.setPageable(book);
         boolean a = job.printDialog();
