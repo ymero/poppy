@@ -7,8 +7,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -27,7 +25,6 @@ public class Test {
 
 
     public static void goodsDicName() throws Exception {
-        List<String> list = new ArrayList<String>();
         Class.forName("org.postgresql.Driver").newInstance();
         String url = "jdbc:postgresql://192.168.1.9:5444/round_server";
         // myDB为数据库名

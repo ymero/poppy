@@ -110,14 +110,7 @@ public class AnhuiPrint implements Printable {
         int width4 = width3 + 130;
         int width5 = width4 + 60;
         int width6 = width5 + 60;
-        // 行与行间隔
-        int height1 = 20;
-        // 行与字间隔
-        int height2 = 15;
         if (pageIndex >= 0) {
-            // 定义起始位置
-            int startX = ( int ) x;
-            int startY = ( int ) (y + 1 * heigth + 140);
             // 画销售单据头信息
             g2.drawString(str1, ( float ) x, ( float ) y + 1 * heigth);
             g2.drawLine(( int ) x, ( int ) (y + 1 * heigth + 10), ( int ) x + 280, ( int ) (y + 1 * heigth + 10));

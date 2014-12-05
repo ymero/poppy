@@ -7,9 +7,7 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import org.apache.http.HttpEntity;
@@ -17,9 +15,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.entity.mime.FormBodyPart;
 import org.apache.http.entity.mime.MultipartEntity;
-import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.entity.mime.content.InputStreamBody;
 import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
@@ -32,13 +28,15 @@ public class UploadAction {
         // File targetFile2 = new File("F:\\1.jpg");
         FileInputStream fis1 = new FileInputStream(targetFile1);
         // FileInputStream fis2 = new FileInputStream(targetFile2);
-//        String targetURL = "http://static.fangbiandian.com.cn/round_server/upload/uploadFile.do";
+        // String targetURL =
+        // "http://static.fangbiandian.com.cn/round_server/upload/uploadFile.do";
         String targetURL = "http://www.fangbiandian.com.cn/round_server/user/updateUserInfo.do";
         HttpPost filePost = new HttpPost(targetURL);
         try {
             // 通过以下方法可以模拟页面参数提交
             HttpClient client = new DefaultHttpClient();
-//            FormBodyPart fbp1 = new FormBodyPart("file1", new FileBody(targetFile1));
+            // FormBodyPart fbp1 = new FormBodyPart("file1", new
+            // FileBody(targetFile1));
             // FormBodyPart fbp2 = new FormBodyPart("file2", new
             // FileBody(targetFile2));
             // FormBodyPart fbp3 = new FormBodyPart("file3", new

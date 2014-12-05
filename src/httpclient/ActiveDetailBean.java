@@ -77,6 +77,7 @@ public class ActiveDetailBean implements Serializable {
 
 
 
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         try {
             File targetFile2 = new File("F:\\hou.JPG");
@@ -86,7 +87,7 @@ public class ActiveDetailBean implements Serializable {
             System.out.println(fis2.getClass().getName());
             System.out.println(fis3.getClass().getName());
         } catch (Exception e) {
-            // TODO: handle exception
+            e.printStackTrace();
         }
     }
 }

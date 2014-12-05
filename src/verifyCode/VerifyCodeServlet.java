@@ -87,5 +87,6 @@ public class VerifyCodeServlet implements Serializable {
 
     public static void main(String[] args) {
         String s = getCertPic(0, 0, null);
+        System.out.println(s);
     }
 }

@@ -3,8 +3,6 @@
  */
 package chineseToPinyin;
 
-import java.util.Scanner;
-
 /**
  * simple introduction
  * 
@@ -101,7 +99,6 @@ public class ChineseToPinYin {
 
     public static void main(String[] args) {
         ChineseToPinYin ctpy = new ChineseToPinYin();
-        Scanner sc = new Scanner(System.in);
         String str = "妍";
         String py = ctpy.getPYString(str);
         System.out.print("拼音：" + py);
