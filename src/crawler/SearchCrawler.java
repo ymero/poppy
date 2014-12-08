@@ -167,7 +167,7 @@ public class SearchCrawler implements Runnable {
 
 
     // 解析页面并找出链接
-    private ArrayList<String> retrieveLinks(URL pageUrl, String pageContents, HashSet crawledList, boolean limitHost) {
+    private ArrayList<String> retrieveLinks(URL pageUrl, String pageContents, HashSet<String> crawledList, boolean limitHost) {
         // 用正则表达式编译链接的匹配模式。
         Pattern p = Pattern.compile("<a\\s+href\\s*=\\s*\"?(.*?)[\"|>]", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher(pageContents);
