@@ -58,6 +58,6 @@ public class QueryShopsTest {
             if (conn != null)
                 conn.disconnect();
         }
-
     }
+
 }

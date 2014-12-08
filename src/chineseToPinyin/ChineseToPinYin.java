@@ -103,4 +103,5 @@ public class ChineseToPinYin {
         String py = ctpy.getPYString(str);
         System.out.print("拼音：" + py);
     }
+
 }

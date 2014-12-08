@@ -23,7 +23,6 @@ import org.apache.commons.mail.SimpleEmail;
  */
 public class SendEmail {
     public static void main(String[] args) {
-
         try {
             SimpleEmail email = new SimpleEmail();
             // 邮件服务器验证：邮箱，密码
@@ -45,7 +44,5 @@ public class SendEmail {
         } catch (EmailException e) {
             e.printStackTrace();
         }
-
     }
-
 }

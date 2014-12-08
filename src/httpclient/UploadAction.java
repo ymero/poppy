@@ -23,6 +23,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import com.alibaba.fastjson.JSON;
 
 public class UploadAction {
+
     public static void main(String[] args) throws FileNotFoundException {
         File targetFile1 = new File("F:\\2.jpg");
         // File targetFile2 = new File("F:\\1.jpg");
@@ -87,4 +88,5 @@ public class UploadAction {
             filePost.releaseConnection();
         }
     }
+
 }

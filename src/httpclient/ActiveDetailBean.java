@@ -90,4 +90,5 @@ public class ActiveDetailBean implements Serializable {
             e.printStackTrace();
         }
     }
+
 }

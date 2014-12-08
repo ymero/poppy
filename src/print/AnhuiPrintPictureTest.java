@@ -174,4 +174,5 @@ public class AnhuiPrintPictureTest implements Printable {
             e.printStackTrace();
         }
     }
+
 }

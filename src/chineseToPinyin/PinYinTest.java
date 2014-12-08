@@ -10,8 +10,9 @@ package chineseToPinyin;
  * @date 2014-6-23
  * @since 1.0
  */
-public class PinYinTest {// 字母Z使用了两个标签，这里有２７个值
-    // i, u, v都不做声母, 跟随前面的字母
+public class PinYinTest {
+
+    // 字母Z使用了两个标签，这里有２７个值,i, u, v都不做声母, 跟随前面的字母
     private char[] chartable = { '啊', '芭', '擦', '搭', '蛾', '发', '噶', '哈', '哈', '击', '喀', '垃', '妈', '拿', '哦', '啪', '期',
             '然', '撒', '塌', '塌', '塌', '挖', '昔', '压', '匝', '座' };
 
@@ -123,4 +124,5 @@ public class PinYinTest {// 字母Z使用了两个标签，这里有２７个值
         System.out.println(obj1.String2Alpha("测试：中华人民共和国！"));
         return;
     }
+
 }

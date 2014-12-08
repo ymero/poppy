@@ -18,6 +18,7 @@ import java.util.regex.Pattern;
  * @since 1.0
  */
 public class Test {
+
     public static void main(String[] args) throws Exception {
         goodsDicName();
     }
@@ -137,4 +138,5 @@ public class Test {
             return "z";
         return "*";
     }
+
 }

@@ -60,6 +60,6 @@ public class RegisterTest {
             if (conn != null)
                 conn.disconnect();
         }
-
     }
+
 }

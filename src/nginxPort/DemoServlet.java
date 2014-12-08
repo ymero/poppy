@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class DemoServlet
  */
 public class DemoServlet extends HttpServlet {
+
     private static final long serialVersionUID = 1L;
 
 
@@ -34,7 +35,7 @@ public class DemoServlet extends HttpServlet {
         IOException {
         int port = request.getServerPort();
         String path = request.getServletPath();
-//        request.setCharacterEncoding("utf-8");
+        // request.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charset=utf-8");
         System.out.println(path);
         ServletOutputStream out = response.getOutputStream();

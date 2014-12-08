@@ -56,6 +56,6 @@ public class QueryGoodsTest {
             if (conn != null)
                 conn.disconnect();
         }
-
     }
+
 }

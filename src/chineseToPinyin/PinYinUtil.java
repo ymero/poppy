@@ -302,4 +302,5 @@ public class PinYinUtil {
     public static void main(String[] args) {
         System.out.println(getChineseSpell("中华人民共和国"));
     }
+
 }

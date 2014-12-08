@@ -22,6 +22,7 @@ import javax.imageio.ImageIO;
  * @since 1.0
  */
 public class VerifyCodeServlet implements Serializable {
+
     /** 序列化版本号 */
     private static final long serialVersionUID = 1709747434243672272L;
 
@@ -89,4 +90,5 @@ public class VerifyCodeServlet implements Serializable {
         String s = getCertPic(0, 0, null);
         System.out.println(s);
     }
+
 }
