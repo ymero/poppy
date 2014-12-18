@@ -49,6 +49,14 @@ public class Base64Test {
 
 
 
+    /**
+     * 主方法
+     * 
+     * @author Poppy
+     * @date 2014-12-18
+     * @param args
+     * @since 1.0
+     */
     public static void main(String[] args) {
         test1();
     }
