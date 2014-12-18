@@ -1,3 +1,4 @@
+package analyseXml;
 import java.math.BigDecimal;
 
 /**
@@ -11,7 +12,7 @@ import java.math.BigDecimal;
  * @date 2014-7-3
  * @since 1.0
  */
-public class Test {
+public class ReplaceStrInXml {
     public static void main(String[] args) {
         String s = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>" + "lalala";
         String sss = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>";
