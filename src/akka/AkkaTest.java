@@ -25,8 +25,7 @@ public class AkkaTest {
         System.out.println("start!");
         // ActorSystem system = ActorSystem.create("MySystem");
         // 上一行注释掉的部分与以下代码的功能一致，只不以下是通过配置文件创建system的。
-        ActorSystem system =
-                ActorSystem.create("akkaApplication", ConfigFactory.load().getConfig("akka"));
+        ActorSystem system = ActorSystem.create("akkaApplication", ConfigFactory.load("app"));//或ConfigFactory.load().getConfig("akka")
         // 创建hello实例
         ActorRef hello = system.actorOf(Props.create(HelloWorld.class), "hello");
         //ActorRef remote = system.actorFor("akka.tcp://akkaApplication@127.0.0.1:2552/user/hello");
